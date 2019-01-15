@@ -1,0 +1,15 @@
+export const TOKEN = 'token'
+export const USER_INFO = 'userInfo'
+export const USER_LOGIN_GET = 'userLoginGet'
+export const USER_LOGIN = 'userLogin'
+export const USER_LOGIN_RESET = 'userLoginReset'
+export const USER_LOGIN_SET = 'userLoginSet'
+export const USER_LOGIN_SUCCESS = 'userLoginSuccess'
+export const USER_LOGIN_FAIL = 'userLoginFail'
+
+export const USER_REGIStER_SUCCESS = 'userRegisterSuccess'
+export const USER_REGIStER_FAIL = 'userRegisterFail'
+export const USER_REGIStER_GET = 'userRegisterGet'
+
+export const FETCH_SUCCESS = 'fetchSuccess'
+export const FETCH_FAILE = 'fetchFAILE'

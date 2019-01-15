@@ -1,0 +1,428 @@
+@charset "utf-8";
+html {
+color:#000;
+background:#fff;
+overflow-y:scroll;
+-webkit-text-size-adjust:100%;
+-ms-text-size-adjust:100%
+}
+html * {
+outline:0;
+-webkit-text-size-adjust:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+html,body {
+font-family:sans-serif
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+margin:0;
+padding:0;
+text-decoration: none; 
+}
+input,select,textarea {
+font-size:100%
+}
+table {
+border-collapse:collapse;
+border-spacing:0
+}
+fieldset,img {
+border:0
+}
+abbr,acronym {
+border:0;
+font-variant:normal
+}
+del {
+text-decoration:line-through
+}
+address,caption,cite,code,dfn,em,th,var {
+font-style:normal;
+font-weight:500
+}
+ol,ul {
+list-style:none
+}
+caption,th {
+text-align:left
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:500
+}
+q:before,q:after {
+content:''
+}
+sub,sup {
+font-size:75%;
+line-height:0;
+position:relative;
+vertical-align:baseline
+}
+sup {
+top:-.5em
+}
+sub {
+bottom:-.25em
+}
+a:hover {
+text-decoration:none
+}
+ins,a {
+text-decoration:none
+}
+a:active{
+text-decoration:none
+}
+p:active{
+    text-decoration: none;
+}
+button{
+    outline: none; 
+    border: none;
+    background: transparent
+}
+
+.am-tabs-default-bar-top{
+    .am-tabs-default-bar-content{
+        &>.am-tabs-default-bar-tab{
+            padding: 1.2rem 0;
+            height: auto;
+            line-height: 1;
+            font-size: 1.5rem;
+            color: #333333;
+            line-height: 2rem;
+        }
+        &>.am-tabs-default-bar-tab-active{
+            color: #6E00D2;
+        }
+        &>.am-tabs-default-bar-underline{
+            border: 2px solid #6E00D2;
+        }   
+    }
+}
+.am-list{
+    .am-list-body{
+        display: flex;
+
+        .am-list-item{
+            &>.am-list-thumb {
+                width: 1.6rem;
+                height: 1.6rem;
+                .am-checkbox-wrapper{
+                    .am-checkbox{
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        &>.am-checkbox-inner{
+                            display: flex;
+                            align-items: center;
+                            align-self: center;
+                            width: 1.6rem;
+                            height: 1.6rem;
+                            justify-content: space-around;
+                            background: transparent;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    .am-checkbox-checked{
+                        &>.am-checkbox-inner{
+                            border: 1px solid #6E00D2;
+                        }
+                        &>.am-checkbox-inner:after{
+                            width: 1rem;
+                            height: 1rem;
+                            border:none;
+                            border-radius: 50%;
+                            transform: none;
+                            background: #6E00D2;
+                            position: relative;
+                            margin: 0 auto;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+           .am-list-thumb:first-child {
+                margin-right: 0.75rem;
+            }
+        }
+    }
+}
+.am-toast{
+    .am-toast-notice{
+        .am-toast-notice-content{
+            .am-toast-text{
+                min-width: 3rem;
+                border-radius: 0.15rem;
+                color: #fff;
+                background-color: rgba(58, 58, 58, 0.9);
+                line-height: 1.5;
+                padding: 0.45rem 0.75rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+.am-modal-wrap {
+    .am-modal-transparent{
+        width: 75%;
+        .am-modal-content{
+            .am-modal-header{
+                position: relative;
+                padding: 2.5rem 0 1rem 0;
+    
+                .am-modal-title{
+                    font-size: 1.8rem;
+                    color: #333333;
+                    line-height: 2.5rem;
+                }
+            }
+            .am-modal-body{
+                padding: 0;
+
+                .am-modal-alert-content{
+                    width: 86.6%;
+                    font-size: 1.5rem;
+                    color: #999999;
+                    text-align: center;
+                    line-height: 2rem;
+                    padding: 0 0 1.5rem 0;
+                    margin: 0 auto;
+                }
+            }
+            .am-modal-footer{
+                .am-modal-button{
+                    font-size: 1.8rem;
+                    color: #333333;
+                    text-align: center;
+                    line-height: 2.5rem;
+                    padding: 1.3rem 0;
+                    display: inline-block;
+                    box-sizing: content-box;
+                }
+                .am-modal-button:last-child{
+                    color: #6E00D2;
+                }
+            }
+        }
+    }
+}
+
+.incarnate-popup,.lasalle-popup{
+    .am-modal-content{
+        .am-modal-header{
+            border-bottom: 1px solid #CCCCCC;
+            padding: 1.1rem 0;
+            .am-modal-title{
+                font-size: 1.8rem;
+                color: #333333;
+                line-height: 2.5rem;
+            }
+        }
+        .am-modal-close{
+            height: 4.7rem;
+            line-height: 4.7rem;
+            right: 4%;
+            width:2.1rem;
+            
+            .am-modal-close-x{
+                width: 1.3rem;
+                height: 1.3rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.incarnate-popup{
+    .am-modal-body{
+        height: 50%;
+        overflow: hidden;
+    }
+}
+
+.incarnate-code-popup{
+    .am-modal-content{
+        padding: 0 0 5rem 0;
+
+        .am-modal-header{
+            position: relative;
+            border-bottom: 1px solid #CCCCCC;
+            padding: 1.1rem 0;
+
+            .am-modal-title{
+                font-size: 1.8rem;
+                color: #333333;
+                line-height: 2.5rem;
+            }
+            .am-modal-title>.back{
+                width: 1.6rem;
+                height: 1.6rem;
+                background: red($color: #000000);
+                display: block;
+                position: absolute;
+                background: url(../image/back.png) 100% 100%  no-repeat;
+                background-position:  left center;
+                line-height: 2.5rem;
+                height: 2.5rem;
+                left: 4%;
+            }
+           
+        }
+        .incarnate-code{
+            &>form{
+                margin: 0 0 0 4%; 
+                border-bottom: 1px solid #EEEEEE;
+                align-items: center;
+                align-self: center;
+                .code{
+                    display: flex;
+                    align-self: center;
+                    align-items: center;
+                    padding: 0 0 0.5rem 0;
+
+                    &>.confirmCode{
+                        font-size: 1.5rem;
+                        color: #4E78D2;
+                        letter-spacing: 0;
+                        text-align: right;
+                        width: 9rem;
+                        margin: 0 4% 0 0;
+                        display: inline-block;
+                        width: 30%;
+                    }
+
+                    
+                    &>input{   
+                            flex:1;
+                            line-height: 1.15;
+                            margin: 0;
+                            height: 2.8rem;
+                            line-height: 2.8rem;
+                            border: none;
+                            font-size: 2rem;
+                            color: #333333;
+                            display: inline-block;
+                            max-width: 62%;
+                    }
+                }
+                &>label{
+                    display: block;
+                    width: 29.6%;
+                    font-size: 1.6rem;
+                    color: #666666;
+                    text-align: left;
+                    line-height: 2rem;
+                    padding: 2rem 0;
+                }
+                input::-webkit-input-placeholder{
+                    color: #CCCCCC;
+                }
+                
+            }        
+            &>.submits{
+                background-image: linear-gradient(-90deg, #7DA6FF 0%, #4E78D2 100%);
+                border-radius: 0.5rem;
+                font-size: 1.8rem;
+                color: #FFFFFF;
+                text-align: center;
+                width: 92%;
+                margin: 0 auto;
+                height: 4.5rem;
+                line-height: 4.5rem;
+                margin: 5rem 0 0 0;
+                display: inline-block;
+            }
+        }
+
+    }   
+}
+.am-modal-wrap {
+    .user-tips-popup,.incarnate-success-popup{
+        width: 75%;
+
+        .am-modal-content{
+            .am-modal-header{
+                position: relative;
+                padding: 25px 0 10px 0;
+    
+                .am-modal-title{
+                    font-size: 18px;
+                    color: #333333;
+                    line-height: 25px;
+                }
+            }
+            .incarnate-success{
+                padding: 0 8px 8px;
+                p{
+                    font-size: 15px;
+                    color: #999999;
+                    text-align: center;
+                    line-height: 20px;
+                    padding: 0 0 15px 0;
+                }
+            }
+            .am-modal-footer{
+                .am-modal-button-group-normal{
+                    .am-modal-button{
+                        color:#4E78D2;
+                        line-height: 25px;
+                        font-size: 18px;
+                        padding: 12px 0;
+                        box-sizing: content-box;
+                        width: 100%;
+                        height: 25px;
+                    }
+                }
+            }
+        }   
+
+    }
+    .incarnate-success-popup{
+        .am-modal-footer{
+            .am-modal-button-group-normal{
+                .am-modal-button{
+                    color:#4E78D2;
+                }
+            }
+        }
+    
+          
+    }
+    .user-tips-popup{
+        .am-modal-content{
+            .am-modal-footer{
+                .am-modal-button-group-normal{
+                    .am-modal-button{
+                        color:#6E00D2;
+                    }
+                }
+            }
+        }
+    }
+}
+//表单编辑的地址选择器
+.adress-picker{
+    .am-picker-popup-header-left,.am-picker-popup-title,.am-picker-popup-header-right{
+        font-size: 1.6rem;
+        line-height: 2.25rem;
+        padding: 1.2rem 4%;
+        height: auto;
+        color:#6E00D2;
+    }
+    .am-picker{
+        padding: 1rem 0;
+        .am-picker-col{
+            height: 22rem;
+        }
+        .am-picker-col-item{
+            font-size: 1.6rem;
+        }
+        .am-picker-col-item-selected {
+            font-size: 1.7rem;
+            color: #6E00D2
+        }
+    }
+}
